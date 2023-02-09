@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body onload="getLocation()">
+  <div class="container">
+    <div class="main container text-center">
+      <div class="row">
+          <div class="col-6 col-lg-6 col-md-12 col-sm-12 qoute-wrapper">
+              <p class="qoute">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                
+              </p>
+              <i class="fas fa-arrows-rotate"></i>
+              <h5 id="author">
+                Cedric Williams
+              </h5>
+              
+          </div>  
+      </div>
+      <div class="row">
+        <div class="time col-6 col-md-6 col-sm-6">
+          <h4 id="change-day">Good Morning, it's currently </h4>
+          <h1 id="time">11:45 <span class="bst">Bst</span></h1> 
+          <p class="currentCity"></p>
+        </div>
+        <div class="more-div col-lg-6 col-md-6 col-sm-6">
+          <div class="btn-box">
+            <button class="btn-more">More<img class="arrow" src="images/desktop/icon-arrow-up.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  <div class="timezone" id="timezone">
+      <div class="container text-center">
+          <div class="row">
+            <div class="time-city col-lg-6 col-md-6 cols-sm-6">
+              <p class="present">Current Time Zone</p>
+              <h2 id="country">Europe/London</h2>
+              
+              <p class="present">Day of The year</p>
+              <h2 id="day">295</h2>
+            </div>
+            <div class="day-city col-lg-6 col-md-6 col-sm-6">
+              <p class="present">Day of the week</p>
+              <h2 id="weekDay">5</h2>
+              
+              <p class="present">Week number</p>
+              <h2 id="weekNumber">42</h2>
+            </div>
+          </div>
+      </div>    
+  </div>
+  </div>
+        
+    
+
+  <script src="app.js"></script>
+</body>
+</html>
