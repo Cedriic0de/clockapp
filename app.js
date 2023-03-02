@@ -78,7 +78,7 @@ function getLocation (){
         } else if (shift >= 12 && shift < 18) {
           dayContent.innerHTML = "Good Afternoon, It's currently";
         } else {
-          dayContent.innerHTML = "Good Evening, It's currently";
+          dayContent.innerHTML = "Hello there, It's currently";
         }
   
       })
