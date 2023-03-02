@@ -15,6 +15,7 @@
   }
   .main{
     padding: 24px 24px 0;
+    margin: auto;
    }
 
   .qoute-wrapper{
@@ -28,7 +29,6 @@
     font-weight: 700;
     font-size: 15px;
     margin-bottom: 24px;
-    color: #000;
   }
   .qoute::before, .qoute::after{
     content: ' " ';
@@ -41,7 +41,6 @@
   }
   .fas{
     padding: 12px;
-    color: #000;
   }
   .fas:hover{
     cursor: pointer;
@@ -133,6 +132,10 @@
 
 /* Media Queries */
 @media (min-width: 320px) and (max-width: 480px) { 
+  body {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
   .qoute-wrapper{
     text-align: center;
     width: auto;
