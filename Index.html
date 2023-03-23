@@ -19,58 +19,56 @@
   
 </head>
 <body onload="getLocation()">
-  <div class="container">
-    <div class="main container text-center">
+
+    <div class="main">
+
       <div class="row">
-          <div class="col-6 col-lg-6 col-md-12 col-sm-12 qoute-wrapper">
-              <p class="qoute">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                
-              </p>
-              <i class="fas fa-arrows-rotate"></i>
-              <h5 id="author">
-                Cedric Williams
-              </h5>
+          <div class="col-12 col-lg-12 col-md-12 col-sm-12 qoute-wrapper">
+            <h5 id="author">
+              Cedric Williams
+            </h5>
+            <p class="qoute">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+            <i class="fas fa-arrows-rotate"></i>
               
           </div>  
       </div>
+
       <div class="row">
-        <div class="time col-6 col-md-6 col-sm-6">
+        <div class="time col-lg-6 col-md-6 col-sm-6">
           <h4 id="change-day">Good Morning, it's currently </h4>
           <h1 id="time">11:45 <span class="bst">Bst</span></h1> 
           <p class="currentCity"></p>
         </div>
-        <div class="more-div col-lg-6 col-md-6 col-sm-6">
-          <div class="btn-box">
-            <button class="btn-more">More</button>
-          </div>
-        </div>
       </div>
-  </div>
   
-  <div class="timezone" id="timezone">
-      <div class="container text-center">
-          <div class="row">
-            <div class="time-city col-lg-6 col-md-6 cols-sm-6">
-              <p class="present">Current Time Zone</p>
-              <h2 id="country">Europe/London</h2>
-              
-              <p class="present">Day of The year</p>
-              <h2 id="day">295</h2>
-            </div>
-            <div class="day-city col-lg-6 col-md-6 col-sm-6">
-              <p class="present">Day of the week</p>
-              <h2 id="weekDay">5</h2>
-              
-              <p class="present">Week number</p>
-              <h2 id="weekNumber">42</h2>
-            </div>
-          </div>
-      </div>    
-  </div>
-  </div>
-        
-    
+      <div class="timezone" id="timezone">
+          <div class="container">
+              <div class="row">
+                <table class="col-lg-12 col-md-12 col-sm-12">
+                  <tr class="present">
+                    <th>Current Time Zone</th>
+                    <td id="country">Europe/London</td>
+                  </tr>
+                  <tr class="present">
+                    <th>Day of The year</th>
+                    <td id="day">295</td>
+                  </tr>
+                  <tr class="present">
+                    <th>Day of the week</th>
+                    <td id="weekDay">5</td>
+                  </tr>
+                  <tr class="present">
+                    <th>Week number</th>
+                    <td id="weekNumber">42</td>
+                  </tr>
+                </table>
+              </div>
+          </div>    
+      </div>
+
+    </div>
 
   <script src="app.js"></script>
 </body>

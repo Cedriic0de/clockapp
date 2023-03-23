@@ -6,22 +6,10 @@ const selectorElement = (selector) => {
   }
   
   let body = selectorElement("body");
-  const btn = selectorElement(".btn-more");
   const box = selectorElement(".timezone");
   const refresh = selectorElement(".fas");
 
   body = getLocation();
-
-// Toggle between timezone box display
-  btn.addEventListener('click', function toggleDiv() {
-    if(timezone.style.display === 'none') {
-        timezone.style.display = "block";
-        btn.innerHTML = "Less";
-    } else {
-        timezone.style.display = "none";
-        btn.innerHTML = "More";
-    }
-  });
 
 refresh.addEventListener("click", function () {
     console.log("You clicked me");
